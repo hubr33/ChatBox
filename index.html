@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f85160339b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="historyPanel">
+      <p class="his">Your history</p>
+      <button class="closeHistory">Close</button>
+      <button class="deleteHistory">Delete history</button>
+      <div class="historyMessages"></div>
+    </div>
+    <div class="howItWorks">
+      <p class="pinfo">
+        <i class="fas fa-redo-alt info"></i> - Find a new stranger
+      </p>
+      <p class="pinfo">
+        <i class="fas fa-history info"></i> - Check your history
+      </p>
+      <p class="pinfo">
+        <i class="fas fa-adjust info"></i> - Mix your nickname color
+      </p>
+      <button class="closeHowItWorks">Close</button>
+    </div>
+    <div class="rgba"></div>
+    <div class="shadow"></div>
+    <div class="first">
+      <p class="welcome">Welcome to ChatBox! Enter your name and press join.</p>
+      <input
+        class="typename"
+        type="text"
+        placeholder="Enter your name"
+        maxlength="8"
+      />
+      <p class="error">Your nickname must be at least 3 characters long!</p>
+      <button class="join">Join</button>
+    </div>
+    <div class="wrapper">
+      <header>
+        <i class="fas fa-redo-alt findNew"></i>
+        <i class="fas fa-history showHistoryI"></i>
+        <i class="fas fa-adjust change"></i>
+        <i class="fas fa-question"></i>
+        <p class="chatBox">ChatBox<i class="fas fa-comments"></i></p>
+      </header>
+      <main>
+        <div id="txt" class="textarea">
+          <div class="warningMessage">
+            <p>Write something to talk with stranger.</p>
+            <span>
+              <i class="fas fa-question"> - show application functions</i>
+            </span>
+          </div>
+        </div>
+        <div class="buttons">
+          <input
+            class="textinput"
+            type="text"
+            placeholder="Write a message"
+            maxlength="70"
+          />
+          <button class="send">Send</button>
+          <button class="clear">Clear text</button>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
