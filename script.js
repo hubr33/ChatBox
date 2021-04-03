@@ -240,6 +240,7 @@ btnJoin.addEventListener("click", closeFront);
 document.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
     closeFront();
+    sendMessage();
   }
 });
 changeColorBtn.addEventListener("click", changeColor);
